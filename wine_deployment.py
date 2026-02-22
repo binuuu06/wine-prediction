@@ -9,11 +9,12 @@ Original file is located at
 
 import streamlit as st
 import joblib
+import pandas as pd
 
 model = joblib.load("dtc_model.pkl")
 
 st.title("wine type prediction !")
-fixed acidity = st.number_input("fixed acidity")
+fixed_acidity = st.number_input("fixed acidity")
 volatile acidity = st.number_input("volatile acidity")
 citric acid = st.number_input("citric acid")
 residual sugar = st.number_input("residual sugar")
